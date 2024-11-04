@@ -10,7 +10,7 @@ Este repositorio documenta el desarrollo de un controlador para motores BLDC, di
   
 2. **Control de Fase mediante Sensores Hall**: Para detectar la posición del rotor, se emplean sensores de efecto Hall, los cuales determinan la secuencia de conmutación para ajustar la rotación del motor en todas las velocidades.
   
-3. **Gate Driver y MOSFETs de Potencia**: Aunque el documento original explora múltiples opciones, el diseño utiliza MOSFETs de baja resistencia Rds(on) y un controlador de puerta adecuado para un cambio rápido y eficiente, basándose en ejemplos que utilizan drivers como el 2ED2184.
+3. **Gate Driver y MOSFETs de Potencia**: Se utilizan MOSFETs de baja resistencia Rds(on) y un controlador de puerta adecuado para un cambio rápido y eficiente, basándose en ejemplos que utilizan drivers como el 2ED2184.
   
 4. **Sensor de Corriente**: La corriente en cada fase se monitorea mediante sensores de efecto Hall, con la fase A configurada con un sensor ACS758 para realizar ajustes de consumo y proteger el sistema de sobrecargas.
 
