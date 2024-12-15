@@ -1,36 +1,40 @@
-# Controlador para Motor BLDC - Shell Eco-Marathon
+# Controller for BLDC Motor - Shell Eco-Marathon
 
-## Descripción General del Controlador
+## General Description of the Controller
 
-Este repositorio documenta el desarrollo de un controlador para motores BLDC, diseñado específicamente para el vehículo de la competencia Shell Eco-Marathon. Utilizando un microcontrolador STM32F103C8T6, el controlador permite un control preciso y eficiente, aprovechando técnicas avanzadas de modulación y control para maximizar el rendimiento energético en entornos de competición.
+This repository documents the development of a controller for BLDC motors, specifically designed for the vehicle competing in the Shell Eco-Marathon. Using an STM32F103C8T6 microcontroller, the controller enables precise and efficient control, leveraging advanced modulation and control techniques to maximize energy performance in competitive environments.
 
-### Arquitectura y Componentes Clave
+### Architecture and Key Components
 
-1. **Microcontrolador**: Se utiliza el STM32F103C8T6, programado en C/C++ desde el entorno STM32CubeIDE. Este controlador procesa las señales de control y coordina la secuencia de fases del motor mediante señales PWM.
+1. **Microcontroller**: The STM32F103C8T6 is used, programmed in C/C++ within the STM32CubeIDE environment. This controller processes control signals and coordinates the motor phase sequence using PWM signals.
   
-2. **Control de Fase mediante Sensores Hall**: Para detectar la posición del rotor, se emplean sensores de efecto Hall, los cuales determinan la secuencia de conmutación para ajustar la rotación del motor en todas las velocidades.
+2. **Phase Control Using Hall Sensors**: Hall effect sensors are employed to detect rotor position, determining the switching sequence to adjust motor rotation at all speeds.
   
-3. **Gate Driver y MOSFETs de Potencia**: Se utilizan MOSFETs de baja resistencia Rds(on) y un controlador de puerta adecuado para un cambio rápido y eficiente, basándose en ejemplos que utilizan drivers como el 2ED2184.
+3. **Gate Driver and Power MOSFETs**: Low Rds(on) MOSFETs are used with a suitable gate driver for fast and efficient switching, based on examples utilizing drivers like the 2ED2184.
   
-4. **Sensor de Corriente**: La corriente en cada fase se monitorea mediante sensores de efecto Hall, con la fase A configurada con un sensor ACS758 para realizar ajustes de consumo y proteger el sistema de sobrecargas.
+4. **Current Sensor**: Current in each phase is monitored using Hall effect sensors, with phase A configured with an ACS758 sensor to adjust consumption and protect the system from overloads.
 
-### Características del Software
+### Software Features
 
-- **Modulación PWM y Secuencia Sinusoidal**: El controlador emplea una modulación de onda sinusoidal para mejorar la eficiencia, utilizando PWM configurado en el STM32 para cada fase del motor.
-- **Cambio de Fase Automatizado**: Se implementa un sistema de interrupciones para cambiar de fase según la posición detectada por los sensores Hall.
-- **Monitoreo de Corriente y Voltaje**: Mediante el ADC del STM32, el controlador registra y ajusta en tiempo real el consumo de energía del motor.
+- **PWM Modulation and Sinusoidal Sequence**: The controller employs sinusoidal waveform modulation to enhance efficiency, using PWM configured on the STM32 for each motor phase.
+- **Automated Phase Switching**: An interrupt-driven system is implemented to switch phases based on the position detected by Hall sensors.
+- **Current and Voltage Monitoring**: Using the STM32 ADC, the controller logs and adjusts motor energy consumption in real-time.
 
-### Esquema de Funcionamiento
+### Operating Scheme
 
-1. **Inicio Suave del Motor**: El controlador inicia en un modo de bajo consumo para reducir picos de corriente en el arranque.
-2. **Detección y Control de Fase**: Los sensores Hall detectan la posición del rotor, permitiendo al controlador sincronizar la conmutación de fases.
-3. **Protección y Diagnóstico**: El controlador detecta y responde ante fallos en sensores o sobrecorriente, protegiendo el sistema durante la operación.
+1. **Soft Motor Start**: The controller starts in a low-consumption mode to reduce current surges during startup.
+2. **Phase Detection and Control**: Hall sensors detect rotor position, allowing the controller to synchronize phase switching.
+3. **Protection and Diagnostics**: The controller detects and responds to sensor failures or overcurrent conditions, protecting the system during operation.
 
-### Documentación Técnica
+### Technical Documentation
 
-Este repositorio incluye:
-- **Código de Ejemplo en C/C++ para STM32**: Ejemplos de configuración del PWM y el ADC en el STM32 para el control del motor.
-- **Esquemáticos y Layout de PCB**: Diagramas de conexión en plataformas como KiCad y Proteus.
-- **Guías de Cálculo de Componentes**: Documentación sobre la selección y el cálculo de valores óptimos para MOSFETs y resistencias de puerta.
+This repository includes:
+- **Example Code in C/C++ for STM32**: Examples of configuring PWM and ADC on the STM32 for motor control.
+- **Schematics and PCB Layout**: Connection diagrams in platforms like KiCad and Proteus.
+- **Component Calculation Guides**: Documentation on selecting and calculating optimal values for MOSFETs and gate resistors.
 
-Para más información, consulta los documentos en este repositorio o comunícate con el equipo de desarrollo.
+For more information, refer to the documents in this repository or contact the development team.
+
+## Schematics
+
+<img src="files/Main.png" alt="" style="width: 45%; height: 70%;" /> <img src="files/DrivingCkt.png" alt="" style="width: 50%; height: 70%;" />
