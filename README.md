@@ -1,4 +1,5 @@
 # Controller for BLDC Motor - Shell Eco-Marathon
+<img src="files/PCBV3.jpg" alt="" style="width: 60%; height: 75%;" /> 
 
 ## General Description of the Controller
 
@@ -39,6 +40,7 @@ For more information, refer to the documents in this repository or contact the d
 <img src="files/Sch.png" alt="" style="width: 75%; height: 75%;" /> 
 
 ## Board
+
 <img src="files/board.png" alt="" style="width: 75%; height: 75%;" /> 
 
 ## Software
