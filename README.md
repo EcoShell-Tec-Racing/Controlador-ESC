@@ -37,4 +37,8 @@ For more information, refer to the documents in this repository or contact the d
 
 ## Schematics
 
-<img src="files/Main.png" alt="" style="width: 45%; height: 70%;" /> <img src="files/DrivingCkt.png" alt="" style="width: 50%; height: 70%;" />
+<img src="files/Sch.png" alt="" style="width: 75%; height: 75%;" /> 
+
+## Board
+
+<img src="files/board.png" alt="" style="width: 75%; height: 75%;" /> 
