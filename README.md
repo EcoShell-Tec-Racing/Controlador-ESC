@@ -36,9 +36,14 @@ This repository includes:
 For more information, refer to the documents in this repository or contact the development team.
 
 ## Schematics
-
 <img src="files/Sch.png" alt="" style="width: 75%; height: 75%;" /> 
 
 ## Board
-
 <img src="files/board.png" alt="" style="width: 75%; height: 75%;" /> 
+
+## Software
+
+- **PCB Layout:** Schematic design and layout was done using <a href = "https://www.altium.com/altium-designer">Altium Designer </a> with the help of licenses provided as part of their <a href="https://www.altium.com/education/sponsorships"> Team Sponsorhsip </a> Program
+
+
+## Contact
