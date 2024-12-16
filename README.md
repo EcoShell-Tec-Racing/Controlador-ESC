@@ -15,9 +15,9 @@ This repository documents the development of a controller for BLDC motors, speci
   
 ### Software Features
 
-- **PWM Modulation and Sinusoidal Sequence**: The controller employs sinusoidal waveform modulation to enhance efficiency, using PWM configured on the STM32 for each motor phase.
 - **Automated Phase Switching**: An interrupt-driven system is implemented to switch phases based on the position detected by Hall sensors.
 - **Current and Voltage Monitoring**: Using the STM32 ADC, the controller logs and adjusts motor energy consumption in real-time.
+- **UART Bus**: The board features a UART serial bus for reliable communication, enabling data exchange between the controller and external devices or systems.
 
 ### Operating Scheme
 
@@ -43,7 +43,9 @@ For more information, refer to the documents in this repository or contact the d
 
 ## Software
 
-- **PCB Layout:** Schematic design and layout was done using <a href = "https://www.altium.com/altium-designer" target = "_blank">Altium Designer </a> with the help of licenses provided as part of their <a href="https://www.altium.com/education/sponsorships" target = "_blank"> Team Sponsorhsip </a> Program
+- **PCB Layout:** Schematic design and layout was done using <a href = "https://www.altium.com/altium-designer" target = "_blank">Altium Designer </a> with the help of licenses provided as part of their <a href="https://www.altium.com/education/sponsorships" target = "_blank"> Team Sponsorhsip </a> Program.
+
+- **Compiling & Debugging**: Done using <a href = "https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE</a> 1.16.0 .   
 
 
 ## Contact
