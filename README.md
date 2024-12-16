@@ -11,10 +11,8 @@ This repository documents the development of a controller for BLDC motors, speci
   
 2. **Phase Control Using Hall Sensors**: Hall effect sensors are employed to detect rotor position, determining the switching sequence to adjust motor rotation at all speeds.
   
-3. **Gate Driver and Power MOSFETs**: Low Rds(on) MOSFETs are used with a suitable gate driver for fast and efficient switching, based on examples utilizing drivers like the 2ED2184.
+3. **Gate Driver and Power MOSFETs**: Low Rds(on) MOSFETs are used with a suitable gate driver for fast and efficient switching. Infineon's <a href = "files/IRFB7734PBF_DS_INFINEON.pdf">IRFB7734PBF</a> (max. 3.5 mohm) were ideal for this application. 
   
-4. **Current Sensor**: Current in each phase is monitored using Hall effect sensors, with phase A configured with an ACS758 sensor to adjust consumption and protect the system from overloads.
-
 ### Software Features
 
 - **PWM Modulation and Sinusoidal Sequence**: The controller employs sinusoidal waveform modulation to enhance efficiency, using PWM configured on the STM32 for each motor phase.
@@ -23,15 +21,15 @@ This repository documents the development of a controller for BLDC motors, speci
 
 ### Operating Scheme
 
-1. **Soft Motor Start**: The controller starts in a low-consumption mode to reduce current surges during startup.
-2. **Phase Detection and Control**: Hall sensors detect rotor position, allowing the controller to synchronize phase switching.
-3. **Protection and Diagnostics**: The controller detects and responds to sensor failures or overcurrent conditions, protecting the system during operation.
+1. **Phase Detection and Control**: Hall sensors detect rotor position, allowing the controller to synchronize phase switching.
+2. **Dead Man Switch Implementation**: This controller employs the detection of an external signal triggered manually by the operator.
+If the signal stops, the controller immediately disables motor operation, ensuring safety and preventing unintended actions.
 
 ### Technical Documentation
 
 This repository includes:
-- **Example Code in C/C++ for STM32**: Examples of configuring PWM and ADC on the STM32 for motor control.
-- **Schematics and PCB Layout**: Connection diagrams in platforms like KiCad and Proteus.
+- **Example Code in C/C++ for STM32**: Examples of configuring Timers and external interrupts to generate the necessary pulses for motor control.
+- **Schematics and PCB Layout**: Connection diagrams and PCB layout made using Altium Designer.
 - **Component Calculation Guides**: Documentation on selecting and calculating optimal values for MOSFETs and gate resistors.
 
 For more information, refer to the documents in this repository or contact the development team.
