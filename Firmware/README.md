@@ -1,7 +1,7 @@
-Download as zip and extract using <a href = "https://www.st.com/en/development-tools/stm32cubeide.html" target="_blank">STM32CubeIDE</a>
+Download as zip and extract using [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
 
 Worked on versions:
 - 1.13.1
 - 1.16.0
 
->Missing Debug Folder**
+> **Missing Debug Folder
