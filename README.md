@@ -49,3 +49,5 @@ For more information, refer to the documents in this repository or contact the d
 
 
 ## Contact
+
+Feel free to reach out and follow our team's socials.
