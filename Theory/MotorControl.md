@@ -7,3 +7,23 @@ This controller employs a six-step control commutation technique, commonly refer
 ![image](https://github.com/user-attachments/assets/f9435f20-cda3-436a-a873-f6f33407747b)
 
 ![image](https://github.com/user-attachments/assets/77b8b639-170f-4c64-bfd6-32a3fada8f9c)
+
+>Second Step
+<img src="files/2AB1.png" alt="" style="width: 75%; height: 75%;" /> 
+<img src="files/2AB2.png" alt="" style="width: 75%; height: 75%;" /> 
+
+>Third Step
+<img src="files/3AB1.png" alt="" style="width: 75%; height: 75%;" /> 
+<img src="files/3AB2.png" alt="" style="width: 75%; height: 75%;" /> 
+
+>Fourth Step
+<img src="files/4AB1.png" alt="" style="width: 75%; height: 75%;" /> 
+<img src="files/4AB2.png" alt="" style="width: 75%; height: 75%;" /> 
+
+>Fifth Step
+<img src="files/5AB1.png" alt="" style="width: 75%; height: 75%;" /> 
+<img src="files/5AB2.png" alt="" style="width: 75%; height: 75%;" /> 
+
+>Sixth Step
+<img src="files/6AB1.png" alt="" style="width: 75%; height: 75%;" /> 
+<img src="files/6AB2.png" alt="" style="width: 75%; height: 75%;" /> 
